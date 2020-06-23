@@ -15,15 +15,15 @@ searchInput.addEventListener('input', searchWord);
 
 
 function czas() {
-        var data = new Date(); //tworzymy obiekt typu data
+        var data = new Date(); 
         var dzien = data.getDate();
         var miesiac = data.getUTCMonth()+1;
         var rok = data.getFullYear();
-        var godzina = data.getHours(); //pobieramy godzinę
-        var minuta = data.getMinutes(); //pobieramy minutę
-        var sekunda = data.getSeconds(); //pobieramy sekundy
+        var godzina = data.getHours();
+        var minuta = data.getMinutes(); 
+        var sekunda = data.getSeconds(); 
  
-        // przypisanie zera do godziny, minuty i sekundy, czyli np. 05 a nie 5
+    
         if (godzina < 10) {
             godzina = "0" + godzina;
         }
@@ -40,9 +40,9 @@ function czas() {
             miesiac = "0" + miesiac;
         }
  
-        //wyświetlenie zegarka w divie o id zegar
+        
         document.querySelector("#zegar").innerHTML =   dzien + "/" + miesiac + "/" + rok + " | " + godzina + ":" + minuta + ":" + sekunda;
  
-        setTimeout(czas, 1000); //samowywołanie się funkcji po 1s
+        setTimeout(czas, 1000); 
     }
-    window.addEventListener("load", czas); //wywołanie funkcji czas po załadowaniu strony  
+    window.addEventListener("load", czas); 
