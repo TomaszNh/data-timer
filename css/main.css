@@ -127,6 +127,7 @@ h3 {text-shadow: -1px 0 white, 0 1px white,
 -moz-box-shadow: 42px 39px 30px -8px rgba(66,55,66,0.73);
 box-shadow: 42px 39px 30px -8px rgba(66,55,66,0.73);
 color: white;
+clear: both;
 
 }
 ul {
@@ -149,6 +150,7 @@ ul li a:hover{
 	position: absolute;
 	bottom: 0;
 	background: rgba(0,100,250,0.1);
+	position: fixed;
 
 
 
